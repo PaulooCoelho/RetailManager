@@ -117,3 +117,5 @@ C:\Users\paulo\source\repos\RetailManager\RMDataManager\obj\Debug\RMDataManager.
 C:\Users\paulo\source\repos\RetailManager\RMDataManager\obj\Debug\RMDataManager.csproj.CopyComplete
 C:\Users\paulo\source\repos\RetailManager\RMDataManager\obj\Debug\RMDataManager.dll
 C:\Users\paulo\source\repos\RetailManager\RMDataManager\obj\Debug\RMDataManager.pdb
+C:\Users\paulo\source\repos\RetailManager\RMDataManager\bin\Swashbuckle.Core.dll
+C:\Users\paulo\source\repos\RetailManager\RMDataManager\bin\WebActivatorEx.dll
