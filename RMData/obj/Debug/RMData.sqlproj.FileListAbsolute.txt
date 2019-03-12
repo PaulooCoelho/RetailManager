@@ -1,0 +1,10 @@
+C:\Users\User01\source\repos\RetailManager\RMData\bin\Debug\RMData.dacpac
+C:\Users\User01\source\repos\RetailManager\RMData\bin\Debug\RMData.dll
+C:\Users\User01\source\repos\RetailManager\RMData\bin\Debug\RMData.pdb
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\RMData.sqlprojAssemblyReference.cache
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\Model.xml
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\refactor.xml
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\postdeploy.sql
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\predeploy.sql
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\RMData.dll
+C:\Users\User01\source\repos\RetailManager\RMData\obj\Debug\RMData.pdb
