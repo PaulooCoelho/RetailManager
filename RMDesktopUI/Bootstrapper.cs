@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Caliburn.Micro;
+using RMDesktopUI.Helpers;
 using RMDesktopUI.ViewModels;
 
 namespace RMDesktopUI
@@ -25,7 +26,8 @@ namespace RMDesktopUI
 
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAPIHelper, APIHelper>();
 
             //_container
             //    .PerRequest<ICalculations, Calculations>();
