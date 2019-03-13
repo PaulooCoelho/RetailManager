@@ -39,27 +39,62 @@ namespace RMDesktopUI.ViewModels
             }
         }
 
-        public bool CanLogIn(string username, string password)
+        private bool _isErrorVisible;
+
+        public bool IsErrorVisible
         {
-            bool output = false;
-
-            if (username.Length > 0 && password.Length > 0)
+            get
             {
-                output = true;
-            }
+                bool output = false;
 
-            return output;
+                if (ErrorMessage?.Length > 0)
+                {
+                    output = true;
+                }
+
+                return output;
+            }
+        }
+
+        private string _errorMessage;
+
+        public string ErrorMessage
+        {
+            get { return _errorMessage; }
+            set
+            {
+                _errorMessage = value;
+                NotifyOfPropertyChange(() => IsErrorVisible);
+                NotifyOfPropertyChange(() => ErrorMessage);
+            }
+        }
+
+
+        public bool CanLogIn
+        {
+            get
+            {
+                bool output = false;
+
+                if (Username?.Length > 0 && Password?.Length > 0)
+                {
+                    output = true;
+                }
+
+                return output;
+            }
         }
 
         public async Task LogIn()
         {
             try
             {
+                ErrorMessage = String.Empty;
                 await _apiHelper.Authenticate(Username, Password);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                ErrorMessage = ex.Message;
             }
         }
     }
